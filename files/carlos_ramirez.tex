@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 $\bullet$  Selected Coursework:\\
+\vspace*{5pt}
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Carlos F. Ramirez}
+{Urb. Park Gardens, A3-3 calle Sequoya, San Juan PR 00926}
+{(787) 378 - 6947 $\bullet$ carlosfabianramirez@gmail.com $\bullet$ http://mooseburger.github.io}
+
+\header{Education}
+
+\school{University of Puerto Rico at Mayag\"{u}ez}{Mayag\"{u}ez, PR, U.S.A.}{B.S. in Computer Science 2011}
+{Cumulative GPA: 3.25/4.00}
+
+\header{Relevant Experience}
+
+\employer{Abarca Health}{October 2012 - October 2015}{Software Engineer I}
+	\begin{achievements}
+	\item Responsible for maintaining and developing, along with a team of developers, RxPlatform, the core service of Abarca Health.
+	\item RxPlatform is a web application that manages the business logic used to process pharmaceutical claims from nearly one million health insurance beneficiaries.
+	\item Was the leader of several projects, the biggest of which was overhauling RxPlatform from ASP.NET WebForms to ASP.NET MVC. 	
+	\item Worked daily with ASP.NET WebForms, ASP.NET MVC, C\string#, HTML, JavaScript, jQuery, Twitter Bootstrap, and T-SQL. 
+	\end{achievements}
+
+\employer{Glugr}{August 2015 - October 2015}{Lead Developer}
+	\begin{achievements}
+	\item Worked on developing Glugr, a shopping discount aggregator.
+	\item Used React to handle the front end, and loopback (a Node.js framework) for the back end.
+	\item Also developed jQuery based scripts to scrape web pages and extract shopping deals from them. 
+	\end{achievements}
+
+\employer{jHacks}{July 2015}{Developer}
+	\begin{achievements}
+	\item Won first place in the Azure Web Services category in the jHacks 2015 Hackathon at Engine4.
+	\item Developed a check-in web app for barbershops, using Angular for the front end and Azure Web Services for the back end.
+	\end{achievements}
+
+\employer{TechSummit PR}{June 2013}{Developer}
+	\begin{achievements}
+	\item A civic coding hackathon. Our team was awarded Most Disruptive.
+	\item Developed AEE Incidents, a Python application that reported electric grid failures via Twitter and SMS.
+	\end{achievements}
+
+\employer{Stanford's Machine Learning Course}{August 2012 - October 2012}{Student}
+	\begin{achievements}
+	\item Enrolled in the online course in Machine Learning offered by Stanford University.
+	\item The course covered the machine learning models of linear and logistic regression, artificial neural networks, and support vector machines (SVMs).
+	\item Implemented and used an artificial neural network to create a handwritten digit character recognition system.
+	\item Used a SVM to create an email spam filter.   	
+	\end{achievements}
+
+\employer{University of Houston-Downtown}{Summer 2011}{Researcher and Developer}
+	\begin{achievements}
+	\item Developed artificial intelligence software in Java to extract meaningful data from medical texts.
+	\item Used Natural Language Processing (NLP) techniques to extract this data. 	
+	\item The software went on to tie for first in an international computer science competition (I2B2, Informatics for Integrating Biology and the Bedside).
+	\item Our team's average accuracy rate in extracting meaningful data was 91.2 percent, nearly identical to Microsoft's team (91.5 percent), and well above the mid-80s percentage that was the total average of all participants.
+ 	\end{achievements}
+
+\employer{Apex PR - Reto 2.0}{2011}{Developer}
+	\begin{achievements}
+	\item Developed enterar.me, an online application that gathered recent news stories from endi.com, ordered them according to their popularity, and extracted related comments from Twitter and Facebook.	
+	\item It was the winning entry in Apex PR's Reto 2.0 online mash-up application competition.
+	\item Was in charge of Facebook and Twitter integration, using online tools to extract keywords from news items and then use the Twitter and Facebook API's to search for relevant comments using these keywords.
+	\end{achievements}
+
+\employer{Undergraduate research}{2008-2009}{Research assistant}
+	\begin{achievements}
+	\item Collaborated with Professor Marko Sch\"{u}tz on the developement of a software metrics system for the NetBSD operating system.
+	\item Succeeded in integrating software metric tools with the NetBSD build process.
+	\item Wrote research paper on the subject.
+	\end{achievements}
+
+\newpage
+
+\header{Honors and Awards}
+\begin{achievements}
+\item Completed Stanford's Introduction to Databases, an online course.
+\item Completed MIT 6.002x Circuits and Electronics, an online course.
+\item Our team placed 8th (out of hundreds) in our region in the IEEEXtreme 2011 global programming competition.
+\item MCSD: Web Apps Certified.
+\end{achievements}
+
+\header{Skills}
+\begin{achievements}
+\item Proficiency in software development in Python, C, C++, C\string#, Haskell, Java, Octave, Assembly IA-32, HTML5, CSS3, JavaScript, SQL.
+\item Experienced in version control systems such as Mercurial, Git, and Microsoft's Team Foundation Server.
+\item Familiarity with UNIX, GNU/Linux, and Amazon WC3 cloud services.
+\end{achievements}
+
+\header{Extracurricular}
+\begin{achievements}
+\item Co-founder of Free Culture @ UPRM, organized and collaborated on presentations, projects, and workshops.
+\item Co-founder of ACM-CS, was Treasurer, organized and started fund raisers, and collaborated on software projects.
+\item Studied abroad at Yonsei University, Seoul, South Korea (February 2010-June 2010)
+\end{achievements}
+\end{document}
